@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680576FB1F25ACCA008D45B1 /* PSUIPrefsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680576FA1F25ACCA008D45B1 /* PSUIPrefsListController.m */; };
+		680576FE1F25C63F008D45B1 /* ClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 680576FD1F25C63F008D45B1 /* ClassUtil.m */; };
+		68D2C8EC1F25A86300FBBD3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2C8EB1F25A86300FBBD3F /* UIKit.framework */; };
+		68D2C8EE1F25A86300FBBD3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2C8ED1F25A86300FBBD3F /* Foundation.framework */; };
+		68D2C8F01F25A86300FBBD3F /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2C8EF1F25A86300FBBD3F /* CydiaSubstrate.framework */; };
+		68D2C8F91F25A86300FBBD3F /* SettingAutoClickLibrary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68D2C8F81F25A86300FBBD3F /* SettingAutoClickLibrary.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		680576F91F25ABDE008D45B1 /* PSUIPrefsListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSUIPrefsListController.h; sourceTree = "<group>"; };
+		680576FA1F25ACCA008D45B1 /* PSUIPrefsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSUIPrefsListController.m; sourceTree = "<group>"; };
+		680576FC1F25C62C008D45B1 /* ClassUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassUtil.h; sourceTree = "<group>"; };
+		680576FD1F25C63F008D45B1 /* ClassUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassUtil.m; sourceTree = "<group>"; };
+		68D2C8E81F25A86300FBBD3F /* SettingAutoClickLibrary.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SettingAutoClickLibrary.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D2C8EB1F25A86300FBBD3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68D2C8ED1F25A86300FBBD3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68D2C8EF1F25A86300FBBD3F /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		68D2C8F41F25A86300FBBD3F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		68D2C8F61F25A86300FBBD3F /* SettingAutoClickLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SettingAutoClickLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		68D2C8F71F25A86300FBBD3F /* SettingAutoClickLibrary.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SettingAutoClickLibrary.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		68D2C8F81F25A86300FBBD3F /* SettingAutoClickLibrary.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SettingAutoClickLibrary.mm; sourceTree = "<group>"; };
+		68D2C8FD1F25A86300FBBD3F /* SettingAutoClickLibrary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SettingAutoClickLibrary.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/SettingAutoClickLibrary.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68D2C8E41F25A86300FBBD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D2C8EC1F25A86300FBBD3F /* UIKit.framework in Frameworks */,
+				68D2C8EE1F25A86300FBBD3F /* Foundation.framework in Frameworks */,
+				68D2C8F01F25A86300FBBD3F /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68D2C8DD1F25A86300FBBD3F = {
+			isa = PBXGroup;
+			children = (
+				68D2C8F11F25A86300FBBD3F /* SettingAutoClickLibrary */,
+				68D2C8EA1F25A86300FBBD3F /* Frameworks */,
+				68D2C8E91F25A86300FBBD3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68D2C8E91F25A86300FBBD3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8E81F25A86300FBBD3F /* SettingAutoClickLibrary.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68D2C8EA1F25A86300FBBD3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8EB1F25A86300FBBD3F /* UIKit.framework */,
+				68D2C8ED1F25A86300FBBD3F /* Foundation.framework */,
+				68D2C8EF1F25A86300FBBD3F /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68D2C8F11F25A86300FBBD3F /* SettingAutoClickLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8F71F25A86300FBBD3F /* SettingAutoClickLibrary.xm */,
+				680576FD1F25C63F008D45B1 /* ClassUtil.m */,
+				680576FC1F25C62C008D45B1 /* ClassUtil.h */,
+				680576FA1F25ACCA008D45B1 /* PSUIPrefsListController.m */,
+				680576F91F25ABDE008D45B1 /* PSUIPrefsListController.h */,
+				68D2C8F81F25A86300FBBD3F /* SettingAutoClickLibrary.mm */,
+				68D2C8F21F25A86300FBBD3F /* Package */,
+				68D2C8F51F25A86300FBBD3F /* Supporting Files */,
+			);
+			path = SettingAutoClickLibrary;
+			sourceTree = "<group>";
+		};
+		68D2C8F21F25A86300FBBD3F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8F31F25A86300FBBD3F /* DEBIAN */,
+				68D2C8FA1F25A86300FBBD3F /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		68D2C8F31F25A86300FBBD3F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8F41F25A86300FBBD3F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		68D2C8F51F25A86300FBBD3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8F61F25A86300FBBD3F /* SettingAutoClickLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68D2C8FA1F25A86300FBBD3F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8FB1F25A86300FBBD3F /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		68D2C8FB1F25A86300FBBD3F /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8FC1F25A86300FBBD3F /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		68D2C8FC1F25A86300FBBD3F /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				68D2C8FD1F25A86300FBBD3F /* SettingAutoClickLibrary.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68D2C8E51F25A86300FBBD3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68D2C8E71F25A86300FBBD3F /* SettingAutoClickLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D2C9001F25A86300FBBD3F /* Build configuration list for PBXNativeTarget "SettingAutoClickLibrary" */;
+			buildPhases = (
+				68D2C8E21F25A86300FBBD3F /* ShellScript */,
+				68D2C8E31F25A86300FBBD3F /* Sources */,
+				68D2C8E41F25A86300FBBD3F /* Frameworks */,
+				68D2C8E51F25A86300FBBD3F /* Headers */,
+				68D2C8E61F25A86300FBBD3F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SettingAutoClickLibrary;
+			productName = SettingAutoClickLibrary;
+			productReference = 68D2C8E81F25A86300FBBD3F /* SettingAutoClickLibrary.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68D2C8DE1F25A86300FBBD3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					68D2C8E71F25A86300FBBD3F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 68D2C8E11F25A86300FBBD3F /* Build configuration list for PBXProject "SettingAutoClickLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68D2C8DD1F25A86300FBBD3F;
+			productRefGroup = 68D2C8E91F25A86300FBBD3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68D2C8E71F25A86300FBBD3F /* SettingAutoClickLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68D2C8E21F25A86300FBBD3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		68D2C8E61F25A86300FBBD3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68D2C8E31F25A86300FBBD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680576FE1F25C63F008D45B1 /* ClassUtil.m in Sources */,
+				68D2C8F91F25A86300FBBD3F /* SettingAutoClickLibrary.mm in Sources */,
+				680576FB1F25ACCA008D45B1 /* PSUIPrefsListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		68D2C8FE1F25A86300FBBD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"SettingAutoClickLibrary\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68D2C8FF1F25A86300FBBD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"SettingAutoClickLibrary\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		68D2C9011F25A86300FBBD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SettingAutoClickLibrary/SettingAutoClickLibrary-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevRespringOnInstall = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		68D2C9021F25A86300FBBD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SettingAutoClickLibrary/SettingAutoClickLibrary-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevRespringOnInstall = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68D2C8E11F25A86300FBBD3F /* Build configuration list for PBXProject "SettingAutoClickLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D2C8FE1F25A86300FBBD3F /* Release */,
+				68D2C8FF1F25A86300FBBD3F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D2C9001F25A86300FBBD3F /* Build configuration list for PBXNativeTarget "SettingAutoClickLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D2C9011F25A86300FBBD3F /* Release */,
+				68D2C9021F25A86300FBBD3F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68D2C8DE1F25A86300FBBD3F /* Project object */;
+}
